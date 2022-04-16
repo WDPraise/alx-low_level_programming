@@ -35,7 +35,7 @@ int main(void)
 * Return: 0
 */
 
-int main()
+int main
 {
         int i;
 
