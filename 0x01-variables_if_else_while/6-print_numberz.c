@@ -1,28 +1,18 @@
-es (20 sloc)  255 Bytes
-   
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
- *
- * Description: print single digit numbers
- *
- * Return: Always 0 (Success)
- */
-
+* main - Print all single digit numbers using only putchar
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i;
+	int digit;
 
-	i = 48;
+	for (digit = 0; digit < 10; digit++)
+	putchar(digit + '0');
 
-	while (i < 58)
-	{
-		putchar(i);
-		i++;
-	}
-
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
