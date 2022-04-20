@@ -22,14 +22,14 @@ int main(void)
 		password[i] = random;
 		ascii -= random;
 		i++;
+
 	}
 	if (ascii > 0)
-		password[i] = ascii;
+		password[i] =ascii;
 	else
 	{
 		i--;
 	}
-	
 
 	for (j = 0; j <= i; j++)
 	{
