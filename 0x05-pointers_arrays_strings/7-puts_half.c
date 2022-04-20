@@ -6,15 +6,21 @@
  * @str: string to be printed
  * Return: void
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i = 0;
+	int i, n, len;
 
-	while (str[i] != '\0')
-	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
-		i++;
-	}
+	len = 0;
+
+	for (i = 0; str[i] != '\0'; i++)
+		len++;
+
+	n = (len / 2);
+
+	if ((len % 2) == 1)
+		n = ((len + 1) / 2);
+
+	for (i = n; str[i] != '\0'; i++)
+		_putchar(str[i]);
 	_putchar('\n');
 }
