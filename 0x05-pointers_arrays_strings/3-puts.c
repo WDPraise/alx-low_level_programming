@@ -5,14 +5,14 @@
  * @str: string to be printed
  * Return: void
  */
-void _puts(char *str)
-{
-	int i = 0;
 
-	while (str[i] != '\0')
+	void _puts(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
-		i++;
 	}
 	_putchar('\n');
 }
