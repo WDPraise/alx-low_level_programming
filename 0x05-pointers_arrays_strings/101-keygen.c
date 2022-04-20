@@ -25,7 +25,7 @@ int main(void)
 
 	}
 	if (ascii > 0)
-		password[i] =ascii;
+		password[i] = ascii;
 	else
 	{
 		i--;
