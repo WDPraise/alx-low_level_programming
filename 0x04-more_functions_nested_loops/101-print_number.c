@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_number(int n)
 {
     print_number(98);
     _putchar('\n');
